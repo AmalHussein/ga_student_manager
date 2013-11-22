@@ -7,6 +7,7 @@ gem 'pg'
 gem 'pry-rails'
 gem 'dotenv-rails'
 gem 'devise'
+gem 'travisminer'
 gem 'omniauth-github'
 
 # Use Uglifier as compressor for JavaScript assets
