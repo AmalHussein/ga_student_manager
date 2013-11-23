@@ -22,6 +22,10 @@ class Course < ActiveRecord::Base
   	CourseMembership.where(course_id: self.id).where(role: 'student').map(&:user).sort_by &:last_name
   end
 
+  def teachers
+    CourseMembership.where(course_id: self.id).where(role: 'teacher').map(&:user).sort_by &:last_name
+  end
+
   def quizzes
   	Assignment.where(course_id: self.id).where(assignment_type: 'quiz').order('due_date DESC')
   end
@@ -32,6 +36,7 @@ class Course < ActiveRecord::Base
 
   def homeworks
   	Assignment.where(course_id: self.id).where(assignment_type: 'homework').order('due_date DESC')
+
   end
 
 end

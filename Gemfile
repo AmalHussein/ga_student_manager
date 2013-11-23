@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'pg'
-gem 'pry-rails'
+
 gem 'dotenv-rails'
 gem 'devise'
 gem 'travisminer'
@@ -14,17 +14,25 @@ gem 'omniauth-github'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do 
+	gem 'pry-rails'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'faker'
   gem 'annotate', '>=2.5.0'
-
+  gem 'simplecov', :require => false, :group => :test
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
+  gem 'database_cleaner'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'metric_fu'
 end
 
 #for connecting making rest calls to github
 gem 'rest-client'
-gem 'metric_fu'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -45,9 +53,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use simplecov to monitor test coverage across the project
-gem 'simplecov', :require => false, :group => :test
 
 # Use unicorn as the app server
 # gem 'unicorn'

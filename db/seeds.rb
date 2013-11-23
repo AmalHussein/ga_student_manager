@@ -1,6 +1,7 @@
-student = User.create(
-	first_name: nil, 
-	last_name: nil, 
+
+abby = User.create(
+	first_name: "Abby", 
+	last_name: "Miller", 
 	is_admin: false, 
 	telephone: nil, 
 	email: nil, 
@@ -35,8 +36,167 @@ student = User.create(
 	last_updated_github_at: "2013-11-21 21:07:38", 
 	biography: "Words words words")
 
-a_course = Course.create(name: "WDI", location: "Boston", session: 'Fall 2013', start_date: Date.today - 1.months, end_date: Date.today + 2.months)
-CourseMembership.create(user: student, course: a_course, role: 'student')
+
+amal = User.create(
+	first_name: "Amal", 
+	last_name: "Hussein", 
+	is_admin: false, 
+	telephone: nil, 
+	email: nil, 
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/amalhussein", 
+	html_url: "https://github.com/amalhussein", 
+	repos_url: "https://api.github.com/users/amalhussein/repos", 
+	gists_url: "https://api.github.com/users/amalhussein/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "amalhussein", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/amalhussein/followers", 
+	following_url: "https://api.github.com/users/amalhussein/following{/other_user}", 
+	starred_url: "https://api.github.com/users/amalhussein/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/amalhussein/subscriptions", 
+	organizations_url: "https://api.github.com/users/amalhussein/orgs", 
+	events_url: "https://api.github.com/users/amalhussein/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/amalhussein/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+
+matt = User.create(
+	first_name: "Matt", 
+	last_name: "Clement", 
+	is_admin: false, 
+	telephone: nil, 
+	email: nil, 
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/darkmoves", 
+	html_url: "https://github.com/darkmoves", 
+	repos_url: "https://api.github.com/users/darkmoves/repos", 
+	gists_url: "https://api.github.com/users/darkmoves/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "darkmoves", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/darkmoves/followers", 
+	following_url: "https://api.github.com/users/darkmoves/following{/other_user}", 
+	starred_url: "https://api.github.com/users/darkmoves/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/darkmoves/subscriptions", 
+	organizations_url: "https://api.github.com/users/darkmoves/orgs", 
+	events_url: "https://api.github.com/users/darkmoves/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/darkmoves/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+teddy = User.create(
+	first_name: "Teddy", 
+	last_name: "Cleveland", 
+	is_admin: false, 
+	telephone: nil, 
+	email: nil, 
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/tcclevela", 
+	html_url: "https://github.com/tcclevela", 
+	repos_url: "https://api.github.com/users/tcclevela/repos", 
+	gists_url: "https://api.github.com/users/tcclevela/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "tcclevela", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/tcclevela/followers", 
+	following_url: "https://api.github.com/users/tcclevela/following{/other_user}", 
+	starred_url: "https://api.github.com/users/tcclevela/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/tcclevela/subscriptions", 
+	organizations_url: "https://api.github.com/users/tcclevela/orgs", 
+	events_url: "https://api.github.com/users/tcclevela/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/tcclevela/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+david = User.create(
+	first_name: "David", 
+	last_name: "Fisher", 
+	is_admin: false, 
+	telephone: nil, 
+	email: nil, 
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/tibbon", 
+	html_url: "https://github.com/tibbon", 
+	repos_url: "https://api.github.com/users/tibbon/repos", 
+	gists_url: "https://api.github.com/users/tibbon/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "tibbon", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/tibbon/followers", 
+	following_url: "https://api.github.com/users/tibbon/following{/other_user}", 
+	starred_url: "https://api.github.com/users/tibbon/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/tibbon/subscriptions", 
+	organizations_url: "https://api.github.com/users/tibbon/orgs", 
+	events_url: "https://api.github.com/users/tibbon/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/tibbon/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+
+boston_wdi = Course.create(name: "WDI", location: "Boston", session: 'Fall 2013', start_date: Date.today - 1.months, end_date: Date.today + 2.months)
+CourseMembership.create(user: abby, course: boston_wdi, role: 'student')
+CourseMembership.create(user: amal, course: boston_wdi, role: 'student')
+CourseMembership.create(user: matt, course: boston_wdi, role: 'student')
+
+nyc_wdi_summer = Course.create(name: "OLD_WDI", location: "NYC", session: 'Summer 2013', start_date: Date.today - 6.months, end_date: Date.today - 3.months)
+CourseMembership.create(user: teddy, course: nyc_wdi_summer, role: 'student')
+
+CourseMembership.create(user: david, course: boston_wdi, role: 'teacher')
+CourseMembership.create(user: teddy, course: boston_wdi, role: 'teacher')
 
 first_assignment = Assignment.create(
 	course_id: Course.first.id,
@@ -53,7 +213,14 @@ Contribution.create(
 	repo_fork: "",
 	travis_data: "",
 	assignment_id: first_assignment.id,
-	user_id: student.id,
+	user_id: abby.id,
 	url: "https://github.com/abigezunt/ga-homework-reddit-hn-rails-ajax/",
 	status: "done"
+)
+
+OneOnOne.create(
+	student_id: abby.id,
+	teacher_id: david.id,
+	date: Date.today,
+	notes: "words words words this student is kinda awesome"
 )
