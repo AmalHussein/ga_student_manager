@@ -37,6 +37,158 @@ abby = User.create(
 	last_updated_github_at: "2013-11-21 21:07:38", 
 	biography: "Words words words")
 
+ryan = User.create(
+	first_name: "Ryan", 
+	last_name: "Page", 
+	is_admin: false, 
+	telephone: nil, 
+	email: "ryan@example.com",
+	password: "secretness" ,
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/ryanpah", 
+	html_url: "https://github.com/ryanpah", 
+	repos_url: "https://api.github.com/users/ryanpah/repos", 
+	gists_url: "https://api.github.com/users/ryanpah/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "ryanpah", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/ryanpah/followers", 
+	following_url: "https://api.github.com/users/ryanpah/following{/other_user}", 
+	starred_url: "https://api.github.com/users/ryanpah/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/ryanpah/subscriptions", 
+	organizations_url: "https://api.github.com/users/ryanpah/orgs", 
+	events_url: "https://api.github.com/users/ryanpah/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/ryanpah/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+bobby = User.create(
+	first_name: "Bobby", 
+	last_name: "Mazzoti", 
+	is_admin: false, 
+	telephone: nil, 
+	email: "bobby@example.com",
+	password: "secretness" ,
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/bmazzotti", 
+	html_url: "https://github.com/bmazzotti", 
+	repos_url: "https://api.github.com/users/bmazzotti/repos", 
+	gists_url: "https://api.github.com/users/bmazzotti/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "bmazzotti", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/bmazzotti/followers", 
+	following_url: "https://api.github.com/users/bmazzotti/following{/other_user}", 
+	starred_url: "https://api.github.com/users/bmazzotti/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/bmazzotti/subscriptions", 
+	organizations_url: "https://api.github.com/users/bmazzotti/orgs", 
+	events_url: "https://api.github.com/users/bmazzotti/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/bmazzotti/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+chris = User.create(
+	first_name: "Chris", 
+	last_name: "Sherlin", 
+	is_admin: false, 
+	telephone: nil, 
+	email: "chris@example.com",
+	password: "secretness" ,
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/chrissherlin", 
+	html_url: "https://github.com/chrissherlin", 
+	repos_url: "https://api.github.com/users/chrissherlin/repos", 
+	gists_url: "https://api.github.com/users/chrissherlin/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "chrissherlin", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/chrissherlin/followers", 
+	following_url: "https://api.github.com/users/chrissherlin/following{/other_user}", 
+	starred_url: "https://api.github.com/users/chrissherlin/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/chrissherlin/subscriptions", 
+	organizations_url: "https://api.github.com/users/chrissherlin/orgs", 
+	events_url: "https://api.github.com/users/chrissherlin/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/chrissherlin/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
+cori = User.create(
+	first_name: "Cori", 
+	last_name: "Allen", 
+	is_admin: false, 
+	telephone: nil, 
+	email: "cori@example.com",
+	password: "secretness" ,
+	street_address: nil, 
+	city: nil, 
+	state: nil, 
+	zip_code: nil, 
+	emergency_contact: nil, 
+	emergency_contact_phone: nil, 
+	github_url: "https://api.github.com/users/callen6", 
+	html_url: "https://github.com/callen6", 
+	repos_url: "https://api.github.com/users/callen6/repos", 
+	gists_url: "https://api.github.com/users/callen6/gists{/gist_id}", 
+	avatar_url: "https://0.gravatar.com/avatar/afb9c4e3401a6e54d045299f25cfbecf?d=https%3A%2F%2Fidenticons.github.com%2F5c284cd1782086a873770ab06d629e36.png&r=x", 
+	public_repos: 88, 
+	followers: 14, 
+	following: 17, 
+	github_id: 5377229, 
+	github_login: "callen6", 
+	gravatar_id: 0, 
+	followers_url: "https://api.github.com/users/callen6/followers", 
+	following_url: "https://api.github.com/users/callen6/following{/other_user}", 
+	starred_url: "https://api.github.com/users/callen6/starred{/owner}{/repo}", 
+	subscriptions_url: "https://api.github.com/users/callen6/subscriptions", 
+	organizations_url: "https://api.github.com/users/callen6/orgs", 
+	events_url: "https://api.github.com/users/callen6/events{/privacy}", 
+	received_events_url: "https://api.github.com/users/callen6/received_events", 
+	type: "User", 
+	site_admin: "f", 
+	public_gists: "0", 
+	created_github_profile: "2013-09-03 23:06:57", 
+	last_updated_github_at: "2013-11-21 21:07:38", 
+	biography: "Words words words")
+
 dan = User.create(
 	first_name: "Dan", 
 	last_name: "Crews", 
@@ -461,7 +613,18 @@ david = User.create(
 boston_wdi = Course.create(name: "WDI", location: "Boston", session: 'Fall 2013', start_date: Date.today - 1.months, end_date: Date.today + 2.months)
 CourseMembership.create(user: abby, course: boston_wdi, role: 'student')
 CourseMembership.create(user: amal, course: boston_wdi, role: 'student')
+CourseMembership.create(user: dan, course: boston_wdi, role: 'student')
 CourseMembership.create(user: matt, course: boston_wdi, role: 'student')
+CourseMembership.create(user: cori, course: boston_wdi, role: 'student')
+CourseMembership.create(user: ryan, course: boston_wdi, role: 'student')
+CourseMembership.create(user: emma, course: boston_wdi, role: 'student')
+CourseMembership.create(user: ben, course: boston_wdi, role: 'student')
+CourseMembership.create(user: bryce, course: boston_wdi, role: 'student')
+CourseMembership.create(user: blake, course: boston_wdi, role: 'student')
+CourseMembership.create(user: rahul, course: boston_wdi, role: 'student')
+CourseMembership.create(user: chris, course: boston_wdi, role: 'student')
+CourseMembership.create(user: mike, course: boston_wdi, role: 'student')
+CourseMembership.create(user: bobby, course: boston_wdi, role: 'student')
 
 nyc_wdi_summer = Course.create(name: "OLD_WDI", location: "NYC", session: 'Summer 2013', start_date: Date.today - 6.months, end_date: Date.today - 3.months)
 CourseMembership.create(user: teddy, course: nyc_wdi_summer, role: 'student')
@@ -475,6 +638,16 @@ first_assignment = Assignment.create(
 	description: "More words",
 	github_login: "tibbon",
 	github_repo: "tibbon/ga-string-analysis-homework",
+	due_date: Date.today,
+	assignment_type: "homework"
+)
+
+second_assignment = Assignment.create(
+	course: boston_wdi,
+	title: "Whatever2",
+	description: "More words33",
+	github_login: "tibbon",
+	github_repo: "tibbon/ga-twitter-stock-sinatra-lab",
 	due_date: Date.today,
 	assignment_type: "homework"
 )

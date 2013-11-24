@@ -12,6 +12,11 @@ gem 'omniauth-github'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+# Bootstrap related gems
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
 group :development, :test do 
 	gem 'pry-rails'
   gem 'rspec-rails'

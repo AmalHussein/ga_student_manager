@@ -23,14 +23,13 @@ class Contribution < ActiveRecord::Base
 	delegate :assignment_type, :due_date, to: :assignment, prefix: true
 
 
-
 	def update_from_pull_request(pr)
-		contribution.github_id = pr["id"]
-		contribution.url = pr["html_url"]
-		contribution.repo_fork = pr["head"]["repo"]["html_url"]
-		# contribution.created_at = pr["created_at"]
-		# contribution.updated_at = pr["updated_at"]
-		contribution.save
+		self.github_id = pr["id"]
+		self.url = pr["html_url"]
+		self.repo_fork = pr["head"]["repo"]["html_url"]
+		# self.created_at = pr["created_at"]
+		# self.updated_at = pr["updated_at"]
+		self.save
 	end
 
 
