@@ -8,13 +8,7 @@
 </head>
 <body>
 
-
 <%= link_to "Home", root_path %>
-<%= link_to "About", about_path %>
-
-<div class="container">
-    <%= yield %>
-</div>
 
 <% if current_user %>
     <div class = 'nav_button'>
@@ -33,7 +27,6 @@
  <p class="alert"><%= alert %></p>
 
 <%= yield %>
->>>>>>> d5ee11d845be1f72f5a49380be33f4988dad7099
 
 </body>
 </html>
