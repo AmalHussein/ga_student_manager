@@ -16,6 +16,11 @@ class UsersController < ApplicationController
 
 		# @one_on_ones = OneOnOne.where(student_id: params[:id])
 		# @one_on_ones = OneOnOne.where(teacher_id: params[:id])
+
+	#   # now with instance methods!
+	  # @student.one_on_ones_as_student
+	  # @teacher.one_on_ones_as_teacher
+	  # @course.one_on_ones
     
   #   # you can get an array of students with an instance method on a course:
 		# @students = @course.students

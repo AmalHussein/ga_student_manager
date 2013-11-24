@@ -22,13 +22,13 @@ describe Course do
   
   describe "instance methods" do 
     	before :each do
-		  	@rahul = User.create
-		    @amal = User.create
-		    @cori = User.create
-		    @xtine = User.create
-		    @david = User.create
-		    @tom = User.create
-		    @teddy = User.create
+		  	@rahul = User.create(email: "rahul@example.com", password: "1234567789")
+		    @amal = User.create(email: "amal@example.com", password: "1234567789")
+		    @cori = User.create(email: "cori@example.com", password: "1234567789")
+		    @xtine = User.create(email: "xtine@example.com", password: "1234567789")
+		    @david = User.create(email: "david@example.com", password: "1234567789")
+		    @tom = User.create(email: "tom@example.com", password: "1234567789")
+		    @teddy = User.create(email: "teddy@example.com", password: "1234567789")
 		    @nyc_summer = Course.create(start_date: Date.today - 5.months, end_date: Date.today - 2.months)
 		  	@teddy_enrolls = CourseMembership.create(user: @teddy, course: @nyc_summer, role: "student")
 		  	@xtine_enrolls = CourseMembership.create(user: @xtine, course: @nyc_summer, role: "student")

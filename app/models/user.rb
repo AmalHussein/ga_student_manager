@@ -53,7 +53,8 @@ class User < ActiveRecord::Base
 	has_many :contributions
 	has_many :assignments, through: :contributions
 
-  has_many :one_on_ones
+  has_many :one_on_ones, foreign_key: :teacher_id
+  has_many :one_on_ones, foreign_key: :student_id
 
 
   
@@ -72,6 +73,14 @@ class User < ActiveRecord::Base
 
   def self.teachers(course)
     course.teachers
+  end
+
+  def one_on_ones_as_teacher
+      OneOnOne.where(teacher_id: self.id)
+  end
+
+  def one_on_ones_as_student
+      OneOnOne.where(student_id: self.id)
   end
 
   def homeworks

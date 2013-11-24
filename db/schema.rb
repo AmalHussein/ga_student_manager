@@ -11,8 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20131122003821) do
+ActiveRecord::Schema.define(version: 20131123182403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,8 +71,10 @@ ActiveRecord::Schema.define(version: 20131122003821) do
     t.text     "notes"
     t.text     "student_concerns"
     t.text     "teacher_concerns"
+    t.integer  "course_id"
   end
 
+  add_index "one_on_ones", ["course_id"], name: "index_one_on_ones_on_course_id", using: :btree
   add_index "one_on_ones", ["student_id"], name: "index_one_on_ones_on_student_id", using: :btree
   add_index "one_on_ones", ["teacher_id"], name: "index_one_on_ones_on_teacher_id", using: :btree
 

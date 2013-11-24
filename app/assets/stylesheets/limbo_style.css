@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+#header {
+  background: #383a3e url(ga-logo.png) no-repeat fixed 0 0;
+  padding: none;
+  width: 100%;
+  height: 40px;
+}
+
+.container-table {
+  width: 95%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.headings {
+  background-color: #d8173d;
+}
+
+.headings th, .user td {
+  width: 50%;
+  padding: 7px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.headings {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.user {
+  background-color: #b3b3b3;
+}
+
+.user td {
+  font-size: 15px;
+  font-weight: bold;  
+  border: 1px solid #fff;
+}
+
+#legend {
+  height: 25px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-bottom: 20px; 
+}
+
+#legend span {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 25px;
+  margin: 0 20px;
+}

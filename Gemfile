@@ -30,8 +30,13 @@ group :development, :test do
   gem 'metric_fu'
 end
 
+
+#Bootstrap SASS install
+# gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+
 #for connecting making rest calls to github
 gem 'rest-client'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

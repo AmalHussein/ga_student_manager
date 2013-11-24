@@ -16,6 +16,7 @@ class Course < ActiveRecord::Base
   has_many :assignments
 	has_many :course_memberships, :dependent => :destroy
 	has_many :users, :through => :course_memberships
+  has_many :one_on_ones
 	scope :current, -> { where('end_date > ?', Date.today).where('start_date < ?', Date.today)}
 
   def students
