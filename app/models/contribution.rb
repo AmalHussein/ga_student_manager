@@ -26,18 +26,16 @@ class Contribution < ActiveRecord::Base
 	def update_from_pull_request(pr)
 		self.github_id = pr["id"]
 		self.url = pr["html_url"]
-		 if pr["head"]["repo"] != nil
+		if pr["head"]["repo"] != nil
 			self.repo_fork = pr["head"]['repo']["html_url"]
-		 end 
-		 travis_info = pr["_links"]["statuses"]["href"]
-		
-			if HTTParty.get(travis_info).empty?
-				self.travis_data && self.travis_url = "No Travis Info"
-					else 
-				self.travis_data = HTTParty.get(travis_info).first['description']
-				#binding.pry
-				self.travis_url = HTTParty.get(travis_info).first['target_url']
-			end 
+		end 
+		travis_info = pr["_links"]["statuses"]["href"]
+		if HTTParty.get(travis_info).empty?
+			self.travis_data && self.travis_url = "No Travis Info"
+		else 
+			self.travis_data = HTTParty.get(travis_info).first['description']
+			self.travis_url = HTTParty.get(travis_info).first['target_url']
+		end 
 		self.created_at = pr["created_at"]
 		self.updated_at = pr["updated_at"]
 		self.save
