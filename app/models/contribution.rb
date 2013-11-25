@@ -26,7 +26,10 @@ class Contribution < ActiveRecord::Base
 	def update_from_pull_request(pr)
 		self.github_id = pr["id"]
 		self.url = pr["html_url"]
-		self.repo_fork = pr["head"]["repo"]["html_url"]
+		#binding.pry
+		 if pr["head"]["repo"] != nil
+		self.repo_fork = pr["head"]['repo']["html_url"]
+		 end 
 		# self.created_at = pr["created_at"]
 		# self.updated_at = pr["updated_at"]
 		self.save

@@ -478,7 +478,7 @@ amal = User.create(
 	followers: 14, 
 	following: 17, 
 	github_id: 5377229, 
-	github_login: "amalhussein", 
+	github_login: "AmalHussein", 
 	gravatar_id: 0, 
 	followers_url: "https://api.github.com/users/amalhussein/followers", 
 	following_url: "https://api.github.com/users/amalhussein/following{/other_user}", 
@@ -651,6 +651,17 @@ second_assignment = Assignment.create(
 	due_date: Date.today,
 	assignment_type: "homework"
 )
+
+
+third_assignment = Assignment.create(
+	course: boston_wdi,
+	title: "Whatever222",
+	description: "More words32223",
+	github_login: "tibbon",
+	github_repo: "tibbon/ga-homework-reddit-hn-rails-ajax",
+	due_date: Date.today,
+	assignment_type: "homework"
+	)
 
 OneOnOne.create(
 	student_id: abby.id,
