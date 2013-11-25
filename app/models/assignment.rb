@@ -47,13 +47,30 @@ class Assignment < ActiveRecord::Base
 	def check_for_pull_requests
 		pull_requests = HTTParty.get("https://api.github.com/repos/#{github_repo}/pulls")
 		pull_requests.each do |pr|
-			pull_status = HTTParty.get(pr["_links"]["statuses"]["href"])
-			travis_build = HTTParty.get(pull_status.first["description"])
-			travis_url = HTTParty.get(pull_status.first["target_url"])
 			user = User.where(github_login: pr["user"]["login"]).first
+			travis_info = pr["_links"]["statuses"]["href"]
+			travis_build = HTTParty.get(travis_info).first['description']
+			travis_url = HTTParty.get(travis_info).first['target_url']
 			contribution = Contribution.find_or_create_by(assignment_id: self, user_id: user) 
 			contribution.update_from_pull_request(pr)
 		end
 	end
 
+	# def check_travis_build
+	# 	pull_requests = HTTParty.get("https://api.github.com/repos/#{github_repo}/pulls")
+	# 	pull_requests.each do |pr|
+	# 		binding.pry
+	# 		pull_status = HTTParty.get(pr["_links"]["statuses"]["href"])
+	# 			binding.pry
+	# 		if pull_status != [ ]
+	# 		travis_info = HTTParty.get("#{pull_status}")
+	# 		travis_build = HTTParty.get(travis_info.first["description"])
+	# 		travis_url = HTTParty.get(travis_info.first["target_url"])
+	# 		end
+	# 	end 	
+	# end
+
 end
+
+
+
