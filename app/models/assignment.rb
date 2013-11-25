@@ -47,6 +47,9 @@ class Assignment < ActiveRecord::Base
 	def check_for_pull_requests
 		pull_requests = HTTParty.get("https://api.github.com/repos/#{github_repo}/pulls")
 		pull_requests.each do |pr|
+			pull_status = HTTParty.get(pr["_links"]["statuses"]["href"])
+			travis_build = HTTParty.get(pull_status.first["description"])
+			travis_url = HTTParty.get(pull_status.first["target_url"])
 			user = User.where(github_login: pr["user"]["login"]).first
 			contribution = Contribution.find_or_create_by(assignment_id: self, user_id: user) 
 			contribution.update_from_pull_request(pr)
